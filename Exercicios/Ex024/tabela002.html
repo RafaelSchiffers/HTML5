@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width:500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding:10px;
+            background-color: lightgray;
+        }
+        td,th{
+            text-align: center;
+            padding:10px;
+            border:1px solid black;
+        }
+        thead,tfoot{
+            background-color: gray;
+            color:white;
+        }
+        thead > tr >th{
+            position:sticky;
+            top:0;
+            background-color: gray;
+        }
+        tbody>tr:nth-child(odd){  /*odd é impar e even é par*/
+            font-weight: bold;
+            background-color: lightgray;
+        }
+        .num{
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        Table
+            CAPTION
+            THEAD
+                TR,TD,TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>         
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 649</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+             </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Porto-velho</td>
+                <td class="num">12 464 243</td>
+            </tr>
+            <tr>
+                <td>Aracaju</td>
+                <td class="num">15 164 143</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">10 324 443</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">20 104 343</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">16 764 043</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">254 904 223</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">254 904 223</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">254 904 223</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">254 904 223</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">254 904 223</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">254 904 223</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">254 904 223</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">254 904 223</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">254 904 223</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total Habitantes</th>
+                <td class="num"><strong>22324141241</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus assumenda ipsam quidem aperiam expedita corrupti libero cumque quos, illo consequuntur ab, deserunt error omnis sit vitae vel cum ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ullam numquam accusamus ipsam tenetur amet eaque vitae error impedit earum dolores, ipsa officiis veritatis quidem id at sapiente. Quae, laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium repellat in quos, repudiandae nesciunt quam a voluptatem eligendi est commodi ea doloremque unde maxime fuga nisi reiciendis impedit! Architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, deserunt, non natus laboriosam commodi molestiae assumenda quod officia cumque in culpa? Quisquam nostrum obcaecati tenetur. Minima non accusamus voluptate quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corrupti vitae quia. Obcaecati aut omnis cumque repellendus cum nam autem voluptates eum praesentium, odit dicta quasi, et atque maxime porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati neque dolorem nam optio iure iste non fugiat unde tempore facere esse enim laborum adipisci, ex molestias quod? Ex, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sint ducimus atque deleniti in dolorum nihil esse repellendus, aspernatur quibusdam itaque dolor deserunt doloremque aut culpa tempore alias? Quis, autem?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus assumenda ipsam quidem aperiam expedita corrupti libero cumque quos, illo consequuntur ab, deserunt error omnis sit vitae vel cum ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ullam numquam accusamus ipsam tenetur amet eaque vitae error impedit earum dolores, ipsa officiis veritatis quidem id at sapiente. Quae, laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium repellat in quos, repudiandae nesciunt quam a voluptatem eligendi est commodi ea doloremque unde maxime fuga nisi reiciendis impedit! Architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, deserunt, non natus laboriosam commodi molestiae assumenda quod officia cumque in culpa? Quisquam nostrum obcaecati tenetur. Minima non accusamus voluptate quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corrupti vitae quia. Obcaecati aut omnis cumque repellendus cum nam autem voluptates eum praesentium, odit dicta quasi, et atque maxime porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati neque dolorem nam optio iure iste non fugiat unde tempore facere esse enim laborum adipisci, ex molestias quod? Ex, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sint ducimus atque deleniti in dolorum nihil esse repellendus, aspernatur quibusdam itaque dolor deserunt doloremque aut culpa tempore alias? Quis, autem?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus assumenda ipsam quidem aperiam expedita corrupti libero cumque quos, illo consequuntur ab, deserunt error omnis sit vitae vel cum ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ullam numquam accusamus ipsam tenetur amet eaque vitae error impedit earum dolores, ipsa officiis veritatis quidem id at sapiente. Quae, laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium repellat in quos, repudiandae nesciunt quam a voluptatem eligendi est commodi ea doloremque unde maxime fuga nisi reiciendis impedit! Architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, deserunt, non natus laboriosam commodi molestiae assumenda quod officia cumque in culpa? Quisquam nostrum obcaecati tenetur. Minima non accusamus voluptate quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corrupti vitae quia. Obcaecati aut omnis cumque repellendus cum nam autem voluptates eum praesentium, odit dicta quasi, et atque maxime porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati neque dolorem nam optio iure iste non fugiat unde tempore facere esse enim laborum adipisci, ex molestias quod? Ex, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sint ducimus atque deleniti in dolorum nihil esse repellendus, aspernatur quibusdam itaque dolor deserunt doloremque aut culpa tempore alias? Quis, autem?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus assumenda ipsam quidem aperiam expedita corrupti libero cumque quos, illo consequuntur ab, deserunt error omnis sit vitae vel cum ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ullam numquam accusamus ipsam tenetur amet eaque vitae error impedit earum dolores, ipsa officiis veritatis quidem id at sapiente. Quae, laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium repellat in quos, repudiandae nesciunt quam a voluptatem eligendi est commodi ea doloremque unde maxime fuga nisi reiciendis impedit! Architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, deserunt, non natus laboriosam commodi molestiae assumenda quod officia cumque in culpa? Quisquam nostrum obcaecati tenetur. Minima non accusamus voluptate quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corrupti vitae quia. Obcaecati aut omnis cumque repellendus cum nam autem voluptates eum praesentium, odit dicta quasi, et atque maxime porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati neque dolorem nam optio iure iste non fugiat unde tempore facere esse enim laborum adipisci, ex molestias quod? Ex, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sint ducimus atque deleniti in dolorum nihil esse repellendus, aspernatur quibusdam itaque dolor deserunt doloremque aut culpa tempore alias? Quis, autem?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus assumenda ipsam quidem aperiam expedita corrupti libero cumque quos, illo consequuntur ab, deserunt error omnis sit vitae vel cum ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ullam numquam accusamus ipsam tenetur amet eaque vitae error impedit earum dolores, ipsa officiis veritatis quidem id at sapiente. Quae, laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium repellat in quos, repudiandae nesciunt quam a voluptatem eligendi est commodi ea doloremque unde maxime fuga nisi reiciendis impedit! Architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, deserunt, non natus laboriosam commodi molestiae assumenda quod officia cumque in culpa? Quisquam nostrum obcaecati tenetur. Minima non accusamus voluptate quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corrupti vitae quia. Obcaecati aut omnis cumque repellendus cum nam autem voluptates eum praesentium, odit dicta quasi, et atque maxime porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati neque dolorem nam optio iure iste non fugiat unde tempore facere esse enim laborum adipisci, ex molestias quod? Ex, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sint ducimus atque deleniti in dolorum nihil esse repellendus, aspernatur quibusdam itaque dolor deserunt doloremque aut culpa tempore alias? Quis, autem?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus assumenda ipsam quidem aperiam expedita corrupti libero cumque quos, illo consequuntur ab, deserunt error omnis sit vitae vel cum ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ullam numquam accusamus ipsam tenetur amet eaque vitae error impedit earum dolores, ipsa officiis veritatis quidem id at sapiente. Quae, laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium repellat in quos, repudiandae nesciunt quam a voluptatem eligendi est commodi ea doloremque unde maxime fuga nisi reiciendis impedit! Architecto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, deserunt, non natus laboriosam commodi molestiae assumenda quod officia cumque in culpa? Quisquam nostrum obcaecati tenetur. Minima non accusamus voluptate quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corrupti vitae quia. Obcaecati aut omnis cumque repellendus cum nam autem voluptates eum praesentium, odit dicta quasi, et atque maxime porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati neque dolorem nam optio iure iste non fugiat unde tempore facere esse enim laborum adipisci, ex molestias quod? Ex, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sint ducimus atque deleniti in dolorum nihil esse repellendus, aspernatur quibusdam itaque dolor deserunt doloremque aut culpa tempore alias? Quis, autem?</p>
+</body>
+</html>
