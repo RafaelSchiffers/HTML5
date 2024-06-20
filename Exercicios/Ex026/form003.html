@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get">  
-    <p>
-        <label for="inome">Nome</label>
-        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="imedia">Media</label>
+                <input type="number" id="media" min="0" max="10" required placeholder="De 0 a 10" step="0.1">
+            </p>
+            <p>
+                <label for="imes">Periodo Letivo</label>
+                <input type="month" name="mes" id="imes">
+            </p>
+            <p>
+                <label for="idia">Dia da prova</label>
+                <input type="date" name="dia" id="idia">
+            </p>
+            <p>
+                <label for="iprova">Hora da Prova</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\d{4,5}-d{4}$">
+            </p>
+            <p>
+                <label for="isport">Basquete</label>
+                <input type="checkbox" name="sport" id="isport">
+                <label for="isportes">Aquatico</label>
+                <input type="checkbox" name="sportes" id="isport">
+            </p>
+            <p>
+                <label for="isexo">Masculino</label>
+                <input type="radio" name="sexo" id="M">
+                <label for="isexo">Feminino</label>
+                <input type="radio" name="sexo" id="F">
+            </p>
+            <p>
+                <label for="icor">Cor</label>
+                <input type="color" name="cor" id="icor">
+        </fieldset>
         <p>
-            <label for="imedia">Media</label>
-            <input type="number" id="media" min="0" max="10" required placeholder="De 0 a 10" step="0.1">
-        </p>
-        <p>
-            <label for="imes">Periodo Letivo</label>
-            <input type="month" name="mes" id="imes">
-        </p>
-        <p>
-            <label for="idia">Dia da prova</label>
-            <input type="date" name="dia" id="idia">
+            <label for="inivel">Nivel de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5">
         </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
-        <p>
-            <label for="iprova"></label>
-            <input type="time" name="hora" id="ihora">
-        </p>
-    </p>
+
     </form>
 </body>
 </html>
