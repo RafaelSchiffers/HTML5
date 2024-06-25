@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main> 
+        <article>
+            <h2>Testando media Query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae, mollitia alias quae ab, incidunt voluptatum, hic optio quos similique atque omnis! Libero reiciendis aut placeat necessitatibus laboriosam veritatis tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur numquam, iure culpa laborum minima libero labore, accusamus optio, unde cupiditate autem harum ab! Qui exercitationem magni temporibus quasi veritatis consectetur?         
+            </p>
+            <p>Ut quo qui corporis ab dignissimos aliquam, doloremque odit. Consequatur distinctio, eveniet voluptate ratione incidunt culpa soluta consequuntur maxime nostrum dicta saepe vel, quasi impedit facilis tempore reiciendis optio. Porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos eveniet nisi cupiditate sed similique sint voluptate aut saepe, nemo praesentium tenetur corrupti, nulla maiores suscipit voluptatibus et commodi excepturi.
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores maiores, omnis laudantium dolor error, ipsam molestias sequi iusto praesentium repudiandae eius commodi delectus aliquam consectetur. Quis expedita mollitia incidunt ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo modi provident ea aspernatur ullam tempora accusantium ipsum laudantium inventore in, sit exercitationem nemo sint corrupti, officia minima ab. Vitae.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth>= 768){
+                itens.style.display ='block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu(){
+            if(itens.style.display=='none'){
+                 itens.style.display = 'block'
+            }
+            else{
+                itens.style.display ='none'
+            }
+        }
+
+    </script>
+</body>
+</html>
